@@ -1,20 +1,19 @@
-name: Build & Deploy RegisterMyRepublic
+name: Build & Deploy to Hostinger
 
 on:
   push:
     branches:
       - main
-      - develop
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source
         uses: actions/checkout@v3
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: '18'
@@ -25,8 +24,11 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload build output
-        uses: actions/upload-artifact@v3
+      - name: Deploy to Hostinger via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          name: dist
-          path: dist/
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          local-dir: dist
