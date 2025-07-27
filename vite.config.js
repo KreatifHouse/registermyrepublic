@@ -190,6 +190,7 @@ logger.error = (msg, options) => {
 }
 
 export default defineConfig({
+	base: './',
 	customLogger: logger,
 	plugins: [
 		...(isDev ? [inlineEditPlugin(), editModeDevPlugin()] : []),
@@ -210,12 +211,15 @@ export default defineConfig({
 		},
 	},
 	build: {
-		rollupOptions: {
-			external: [
-				'@babel/parser',
-				'@babel/traverse',
-				'@babel/generator',
-				'@babel/types'
+	outDir: 'dist',
+	assetsDir: 'assets',
+	rollupOptions: {
+		input: path.resolve(__dirname, 'index.html'),
+		external: [
+			'@babel/parser',
+			'@babel/traverse',
+			'@babel/generator',
+			'@babel/types'
 			]
 		}
 	}
