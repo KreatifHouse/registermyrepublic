@@ -4,16 +4,16 @@ import { Button } from '@/components/ui/button';
 import { Gift, Tag, Percent, CalendarDays, MessageCircle } from 'lucide-react';
 
 const promos = [
-  {
-    id: 1,
-    title: "Cashback Hingga 1 JUTA!",
-    description: "Dapatkan cashback spesial untuk pelanggan baru MyRepublic. Semakin cepat berlangganan, semakin besar cashbacknya! Berlaku untuk paket tertentu.",
-    imageUrl: "https://images.unsplash.com/photo-1649486116188-b464d7f864a9",
-    alt: "Ilustrasi promo cashback MyRepublic dengan tumpukan uang",
-    ctaText: "Klaim Promo Ini",
-    period: "1 Juni - 31 Juli 2025",
-    category: "Pelanggan Baru"
-  },
+  // {
+  //   id: 1,
+  //   title: "Cashback Hingga 1 JUTA!",
+  //   description: "Dapatkan cashback spesial untuk pelanggan baru MyRepublic. Semakin cepat berlangganan, semakin besar cashbacknya! Berlaku untuk paket tertentu.",
+  //   imageUrl: "https://images.unsplash.com/photo-1649486116188-b464d7f864a9",
+  //   alt: "Ilustrasi promo cashback MyRepublic dengan tumpukan uang",
+  //   ctaText: "Klaim Promo Ini",
+  //   period: "1 Juni - 31 Juli 2025",
+  //   category: "Pelanggan Baru"
+  // },
   {
     id: 2,
     title: "Gratis Biaya Instalasi & Router WiFi!",
@@ -24,16 +24,16 @@ const promos = [
     period: "Berlaku Selamanya",
     category: "Semua Pelanggan Baru"
   },
-  {
-    id: 3,
-    title: "Diskon 20% Paket MyGamer 250 Mbps",
-    description: "Para gamer, merapat! Dapatkan diskon 20% untuk langganan paket MyGamer 250 Mbps selama 6 bulan pertama. Latency rendah, main game makin seru!",
-    imageUrl: "https://images.unsplash.com/photo-1580236800792-93519c189e2a",
-    alt: "Setup gaming dengan monitor dan keyboard menyala terang",
-    ctaText: "Ambil Diskon Gamer",
-    period: "15 Juni - 15 Agustus 2025",
-    category: "Paket Gaming"
-  },
+  // {
+  //   id: 3,
+  //   title: "Diskon 20% Paket MyGamer 250 Mbps",
+  //   description: "Para gamer, merapat! Dapatkan diskon 20% untuk langganan paket MyGamer 250 Mbps selama 6 bulan pertama. Latency rendah, main game makin seru!",
+  //   imageUrl: "https://images.unsplash.com/photo-1580236800792-93519c189e2a",
+  //   alt: "Setup gaming dengan monitor dan keyboard menyala terang",
+  //   ctaText: "Ambil Diskon Gamer",
+  //   period: "15 Juni - 15 Agustus 2025",
+  //   category: "Paket Gaming"
+  // },
   {
     id: 4,
     title: "Upgrade Speed Gratis Selama 3 Bulan!",
